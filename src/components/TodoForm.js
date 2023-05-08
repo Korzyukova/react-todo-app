@@ -5,14 +5,14 @@ function TodoForm(props) {
 
     const handleChange = e => {
         setInput(e.target.value);
-    }
+    };
 
     const handleSubmit = e => {
         e.preventDefault();
-        // props.onSubmit({
-        //     id: Math.floor(Math.random()*10000),
-        //     text: input
-        // })
+        props.onSubmit({
+            id: Math.floor(Math.random()*10000),
+            text: input
+        })
         setInput('');
     };
 
